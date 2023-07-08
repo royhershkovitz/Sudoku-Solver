@@ -25,15 +25,21 @@ The row separated with newline (\\n)
 Unknown square will be . the others must be 0-N (N is the number of squares in a group)
 
 Config path looks like:
-Number_of_squares_group_in_a_row(1)   Number_of_squares_group_in_a_column(2)   Number_of_squares_in_group_by_row(3)   Number_of_squares_in_group_by_column(4)   Game_type(5)
+```
+Number_of_squares_group_in_a_row(1)
+Number_of_squares_group_in_a_column(2)
+Number_of_squares_in_group_by_row(3)
+Number_of_squares_in_group_by_column(4)
+Game_type(5)
 
-Game_type Enum ->
+Game_type is an Enum ->
     REGULAR = 0
     DIAGONAL = 1
 
 The most common option will be
 3 3 3 3 0
-
+```
+For examples checkout data/challenges
 
 ## The solver
 The solver gets 'Board' datatype that contains 2d array of groups (a group of squares)
